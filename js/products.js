@@ -56,7 +56,7 @@ function displayCollections(collection)
 {
    let collections2 = `<h2 id="collections">Our Collections</h2>`;
 
-    collection.forEach(function(cloth){
+    collection.forEach(function(cloth, Index){
         let {image,name,category,avlSize,description,price} = cloth;
     collections2 += `
     <div class="product">
@@ -65,8 +65,7 @@ function displayCollections(collection)
             <h3>${name}</h3>
             <p>Price: <ins>Rs.${price} only</ins></p>
             <p>Size: <ins>${avlSize}</ins></p>
-            <a href="product.html">Order now</a>
-            <a href="product.html">View</a>
+            <input onclick="showPop(${Index})" class="button" type="button" value="Order Now">
         </div>
     </div>`;  
 }); 
@@ -88,4 +87,31 @@ function searchs(e)
     });
     displayCollections(coll);
     
+}
+
+
+// show the pop window
+let indx;
+function showPop(i)
+{
+        indx = stock[i];
+        console.log(indx);
+        let pop1 = document.getElementsByClassName("pop")[0];
+        pop1.style.display = "block";
+
+}
+// close the pop window
+function closePop()
+{
+    
+    let pop1 = document.getElementsByClassName("pop")[0];
+        pop1.style.display = "none";
+
+}
+
+// send order
+function sendOrder(e){
+    e.preventDefault();
+    alert("your order placed, our staffs will contact you soon");
+    closePop();
 }

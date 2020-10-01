@@ -9,6 +9,37 @@
 <body>
     <div class="pageContainer">
 
+        <!-- <div class="pop">
+            <div class="up">
+    
+                <table class="admins">
+                    <thead>
+                        <th>s.no</th>
+                        <th>name</th>
+                        <th>no.</th>
+                        <th>Address</th>
+                    </thead>
+                    <tbody id="adminT">
+
+                    </tbody>
+                </table>
+                        <button class="button" onclick="closePop()">Cancel</button>
+            </div>
+        </div> -->
+
+        <div class="pop">
+            <div class="up">
+    
+                <form onsubmit="sendOrder(event)">
+                        <input type="text" placeholder="Full Name" required id="uname">
+                        <input type="number" placeholder="Phone no." required id="uphno">
+                        <input type="text" placeholder="Address" required id="uaddress">
+                        <input type="number" placeholder="Pincode." required id="upin">
+                        <button class="button" type="submit">Place Order</button>
+                </form>
+                        <button class="button" onclick="closePop()">Cancel</button>
+            </div>
+        </div>
         <!-- head section -->
         <header>
             <div class="logo">
@@ -19,8 +50,8 @@
                 <p>The Wholesale store</p>
             </div>
             <div class="search">
-                <form action="" method="get">
-                    <input type="search" placeholder="search here">
+                <form onsubmit="searchs(event)" method="get">
+                    <input type="search" id="sch" placeholder="search here">
                     <input type="submit" value="search">
                 </form>
             </div>
@@ -29,6 +60,7 @@
         <div class="space">
 
         </div>
+
         <!-- navigation section -->
         <nav>
             <ul>

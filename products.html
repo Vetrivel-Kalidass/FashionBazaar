@@ -9,6 +9,21 @@
 <body>
     <div class="pageContainer">
 
+        <div class="pop">
+            <div class="up">
+    
+                <form onsubmit="sendOrder(event)">
+                        <input type="text" placeholder="Full Name" required id="uname">
+                        <input type="number" placeholder="Phone no." required id="uphno">
+                        <input type="text" placeholder="Address" required id="uaddress">
+                        <input type="number" placeholder="Pincode." required id="upin">
+                        <button class="button" type="submit">Place Order</button>
+                        <a href="https://chat.whatsapp.com/JbNFvue6Afp7SX7EfztYjh" class="button" >chat order</a>
+                        <a href="tel:7339371412" class="button" >call order</a>
+                </form>
+                        <button class="button" onclick="closePop()">Cancel</button>
+            </div>
+        </div>
         <!-- head section -->
         <header>
             <div class="logo">

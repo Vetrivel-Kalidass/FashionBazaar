@@ -201,23 +201,21 @@ nav > ul >li:hover .drop{
     text-align: center;
     background-color: white
 }
-del{
-    color: red;
-}
 ins{
     color: green;
 }
 .product h3, .product p{
     margin: 15px;
 }
-.product a{
+.button{
     background-color: olivedrab;
     color: white;
     text-decoration: none;
     padding: 10px;
     margin: 2.5px;
+    
 }
-.product a:hover{
+.button:hover{
     background-color: orange;
 }
 
@@ -239,6 +237,25 @@ table{
     border-radius: 5px;
 }
 
+.pop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+}
+.up{
+    width: 30%;
+    height: 30%;
+    margin-top: 10%;
+    margin-left: 20%;
+    background-color: white;
+    display: inline-block;
+    padding: 10%;
+}
+
+
+
 @media (max-width: 500px)
 {
 
@@ -257,7 +274,7 @@ body{
     padding: 5%;
     margin: auto;
 }
-.search input{
+.search input, .up input{
 
     margin: 2px;
     padding: 3%;
@@ -290,7 +307,7 @@ nav > ul > li > a{
 .productCaption{
     padding: 10px;
 }
-.product a{
+.button{
     margin: 1px;
     padding: 5px;
     display: inline-block;
@@ -306,5 +323,14 @@ table{
 }
 .description{
     float: left;
+}
+.up{
+    width: 50%;
+    height: 50%;
+    margin-top: 15%;
+    margin-left: 15%;
+    background-color: white;
+    display: inline-block;
+    padding: 10%;
 }
 }

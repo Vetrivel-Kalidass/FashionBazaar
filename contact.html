@@ -19,8 +19,8 @@
                 <p>The Wholesale store</p>
             </div>
             <div class="search">
-                <form action="" method="get">
-                    <input type="search" placeholder="search here">
+                <form onsubmit="searchs(event)" method="get">
+                    <input type="search" id="sch" placeholder="search here">
                     <input type="submit" value="search">
                 </form>
             </div>
@@ -34,14 +34,14 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <!-- <li><a href="about-us.html">About</a></li> -->
-                <li><a href="#">Services</a>
+                <li><a href="#">Categories</a>
                     <ul class="drop">
-                        <li><a href="categories/Shirts.html">Delivery</a></li>
-                        <li><a href="categories/Pants.html">Tracking</a></li>
-                        <li><a href="categories/Tracks.html">Package</a></li>
+                        <li><a href="categories/Shirts.html">Shirts</a></li>
+                        <li><a href="categories/Pants.html">Pants</a></li>
+                        <li><a href="categories/Tracks.html">Tracks</a></li>
                     </ul>
                 </li>
-                <li><a href="products.html">Products</a></li>
+                <li><a id="products" href="products.html">All Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>

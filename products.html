@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK web 1.0</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="pageContainer">
+
+                <div class="up"><div class="contentHolder">
+                    <div class="img">
+                        <img src="images/Cotton stripped T-shirt.jpg" alt="load Pic" id="productImg1">
+                    </div>
+                    <div class="description">
+                        <h1 id="pName">Product Name</h1>
+                        <h3 id="pPrice">price: </h3>
+                        <h3 id="pDescription">Description: </h3>
+                        <h3 id="pSize"></h3><p id="chkSize"></p><br>
+                        <h3>Your details:</h3>
+                    </div>
+                    <aside class="sidebar">
+                        <form onsubmit="sendOrder(event)">
+                                <input type="text" placeholder="Full Name" required id="uname">
+                                <input type="number" placeholder="Phone no." required id="uphno">
+                                <input type="text" placeholder="Address" required id="uaddress">
+                                <input type="number" placeholder="Pincode." required id="upin"><br>
+                                <button class="button" type="submit">Place Order</button>
+                                <button class="button" onclick="closePop()" type="button">Cancel</button>
+                                <a href="https://chat.whatsapp.com/JbNFvue6Afp7SX7EfztYjh" class="button" >chat order</a>
+                                <a href="tel:7339371412" class="button" >call order</a>
+                        </form>
+                    </aside>
+                </div>
+                </div>
+        <!-- head section -->
+        <header>
+            <div class="logo">
+                <img src="images/bg/kisspng-father-logo-cartoon-image-of-uncle-beard-5a9bf9ad77c2b9.3769850015201714374906.png" alt="logo">
+            </div>
+            <div class="title">
+                <h1>Fashion Bazaar</h1>
+                <p>The Wholesale store</p>
+            </div>
+            <div class="search">
+                <form onsubmit="searchs(event)" method="get">
+                    <input type="search" id="sch" placeholder="search here">
+                    <input class="button" type="submit" value="search">
+                </form>
+            </div>
+        </header>
+
+        <div class="space">
+
+        </div>
+        <!-- navigation section -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="about-us.html">About</a></li> -->
+                <li><a href="#">Categories</a>
+                    <ul class="drop">
+                        <li><a href="Shirts.html">Shirts</a></li>
+                        <li><a href="Pants.html">Pants</a></li>
+                        <li><a href="Tracks.html">Tracks</a></li>
+                    </ul>
+                </li>
+                <li><a href="products.html">All Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+        <!-- products view -->
+        <div class="products-list">
+        </div>
+        <div class="space">
+
+        </div>
+
+    
+        <!-- footer section -->
+        <footer class="mainFooter">
+            <div class="foot">
+                <h3>My Store</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>My Links</h3>
+                <ul>
+                    <li><a href="https://chat.whatsapp.com/JbNFvue6Afp7SX7EfztYjh">Whatsapp</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>My Partners</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">COD</a></li>
+                    <li><a href="#">G-pay</a></li>
+                    <li><a href="#">Card</a></li>
+                    <li><a href="#">UPI</a></li>
+                </ul>
+            </div>
+            <div class="foot" id="address">
+                <address>
+                    <h3>The Fashion Bazzar</h3>
+                    <p>#01, some street, nice town,great state - 999 999.</p>
+                    <p>Email: <a href="mail:kaleemfairy@gmail.com">kaleemfairy@gmail.com</a></p>
+                    <p>Ph   : <a href="tel:7339371412">+91 7339371412</a></p>
+                </address>
+            </div>
+            <div class="space">
+    
+            </div>
+        </footer>
+    
+        <!-- copy rights -->
+        <div class="copy">
+            <p>Vetri &copy; All Rights Reserved.</p>
+        </div>
+        
+    </div>
+    <script src="js/fashionBazaar.js"></script>
+</body>
+</html>

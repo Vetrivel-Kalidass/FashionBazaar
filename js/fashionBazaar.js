@@ -97,8 +97,8 @@ function searchs(e)
     displayCollections(stock);
     
 // show the pop window
-let Cart = [];
-Cart = JSON.parse(localStorage.getItem("cart"));
+//let Cart = [];
+//Cart = JSON.parse(localStorage.getItem("cart"));
 
 // selected product
 let selectedP;
@@ -106,8 +106,8 @@ let selectedP;
 function showPop(i)
 {
         selectedP = stock[i];
-        Cart.push(selectedP);
-        localStorage.setItem("cart", JSON.stringify(Cart))
+        //Cart.push(selectedP);
+        //localStorage.setItem("cart", JSON.stringify(Cart))
         // console.log(localStorage.getItem("cart"));
         let pop1 = document.getElementsByClassName("up")[0];
         document.getElementById("productImg1").src = selectedP.image;

@@ -24,10 +24,10 @@
                     </div>
                     <aside class="sidebar">
                         <form onsubmit="sendOrder(event)">
-                                <input type="text" placeholder="Full Name" required id="uname">
-                                <input type="number" placeholder="Phone no." required id="uphno">
+                                <input type="text" placeholder="Full Name" onblur="checkname()" required id="uname">
+                                <input type="number" placeholder="Phone no."  onblur="checkphno()" required id="uphno">
                                 <input type="text" placeholder="Address" required id="uaddress">
-                                <input type="number" placeholder="Pincode." required id="upin"><br>
+                                <input type="number" placeholder="Pincode."  onblur="checkpin()" required id="upin"><br>
                                 <button class="button" type="submit">Place Order</button>
                                 <button class="button" onclick="closePop()" type="button">Cancel</button>
                                 <a href="https://chat.whatsapp.com/JbNFvue6Afp7SX7EfztYjh" class="button" >chat order</a>

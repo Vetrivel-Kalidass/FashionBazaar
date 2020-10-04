@@ -141,8 +141,9 @@ function sendOrder(e){
     let address = document.getElementById("uaddress").value;
     let pincode = document.getElementById("upin").value;
     let buyerDetails = " name :" + name + ", phone :" + phno + ", address :" + address + ", pincode :" + pincode;
-    let url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kaleemfairy@gmail.com&su=' + name + ' Placed ordered&body= Order Details: '+ orderDetails +  '\n Buyer Details: ' + buyerDetails +'&ui=2&tf=1&pli=1';
-
+    //let url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kaleemfairy@gmail.com&su=' + name + ' Placed ordered&body= Order Details: '+ orderDetails +  '\n Buyer Details: ' + buyerDetails +'&ui=2&tf=1&pli=1';
+    let url = 'mailto.kaleemfairy@gmail.com';
+    
     window.open(url, '_blank');
     alert("your order placed, our staffs will contact you soon");
     closePop();

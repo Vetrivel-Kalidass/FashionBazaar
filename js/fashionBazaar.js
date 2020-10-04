@@ -144,7 +144,7 @@ function sendOrder(e){
     let url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kaleemfairy@gmail.com&su=' + name + ' Placed ordered&body= Order Details: '+ orderDetails +  '\n Buyer Details: ' + buyerDetails +'&ui=2&tf=1&pli=1';
     
     window.open(url, '_blank');
-    alert("your order placed, our staffs will contact you soon");
+    setTimeout(function(){alert("your order placed, our staffs will contact you soon");},4000);
     closePop();
 }
 
@@ -159,4 +159,31 @@ function checkS(){
         document.getElementById("pSize").innertext = "Available";
         console.log("no")
     }
+}
+
+// check buyer name
+function checkname(){
+    let name = document.getElementById("uname").value;
+    if(name.length > 20 || name.length < 4){
+        alert("please give proper name or shorten ur name...");
+    }
+    console.log("name ok");
+}
+
+// check buyer number
+function checkphno(){
+    let phno = document.getElementById("uphno").value;
+    if(phno.length != 10){
+        alert("please give proper number..");
+    }
+    console.log("number ok");
+}
+
+// check buyer address
+function checkpin(){
+    let pin = document.getElementById("upin").value;
+    if(pin.length != 6){
+        alert("please give pin code...");
+    }
+    console.log("pincode ok");
 }
